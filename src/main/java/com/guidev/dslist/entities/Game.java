@@ -17,13 +17,15 @@ public class Game {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String title;
-	@Column(name="game_year")
+	@Column(name="game_year")//PARA NÃO CONFLITAR COM O YEAR DO DB
 	private Integer year;
 	private String genre;
 	private String platforms;
 	private String score;
 	private String imgUrl;
+	@Column(columnDefinition = "TEXT")//PARA DADOS ACIMA DE 250 CHARS DO VARCHAR
 	private String shortDescription;
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {
