@@ -5,7 +5,7 @@ import com.guidev.dslist.entities.Game;
 public class GameMinDTO {
 	
 
-	private long id;
+	private Long id;
 	private String title;
 	private Integer year;
 	private String imgUrl;
@@ -22,7 +22,7 @@ public class GameMinDTO {
 		shortDescription = entity.getShortDescription();		
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
